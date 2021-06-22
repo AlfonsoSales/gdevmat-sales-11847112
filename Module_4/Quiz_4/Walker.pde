@@ -37,7 +37,7 @@ public class Walker
       int r = int(map(noise(tr), 0, 1, 0, 255));
       int g = int(map(noise(tg), 0, 1, 0, 255));
       int b = int(map(noise(tb), 0, 1, 0, 255));
-      int a = int(random(10, 100));
+      int a = int(255);
       
       tr += 1f;
       tg+= 5f;
