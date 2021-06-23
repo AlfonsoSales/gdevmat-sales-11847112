@@ -13,8 +13,13 @@ public class Walker
   void render()
   {
     noStroke();
-    float s = randomGaussian();
-    circle(x, y, s * 50);
+    float sd = 10;
+    float mean = 10;
+    float val = randomGaussian();
+    float x = val;
+    float y = random(-360, 360);
+    float s = (val*sd) + mean;
+    circle(x, y, s);
   }
   
   void perlinWalk()
