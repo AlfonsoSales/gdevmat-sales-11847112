@@ -23,20 +23,20 @@ void draw()
   
   stroke(255, 0, 0);
   //mouse.mult(0.5);
-  //mouse.normalize();
-  strokeCap(ROUND);
-  line(-mouse.x, -mouse.y, mouse.x, mouse.y);
+  mouse.normalize();
+ 
+  line(-mouse.x * Window.windowHeight/2, -mouse.y * Window.windowHeight/2, mouse.x * Window.windowHeight/2, mouse.y * Window.windowHeight/2);
   
   strokeWeight(5);
   stroke(255, 140, 140);
   
-  line(-mouse.x, -mouse.y, mouse.x, mouse.y);
+  line(-mouse.x * Window.windowHeight/2, -mouse.y * Window.windowHeight/2, mouse.x * Window.windowHeight/2, mouse.y * Window.windowHeight/2);
   
   strokeWeight(11.5);
   stroke(0, 0, 0);
   
-  mouse.mult(0.3);
-  line(-mouse.x, -mouse.y, mouse.x, mouse.y);
+  mouse.mult(0.2);
+  line(-mouse.x * Window.windowHeight/2, -mouse.y * Window.windowHeight/2, mouse.x * Window.windowHeight/2, mouse.y * Window.windowHeight/2);
   
   println(mouse.mag());
 }
