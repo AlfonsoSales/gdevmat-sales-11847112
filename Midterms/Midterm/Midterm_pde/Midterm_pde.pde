@@ -43,10 +43,14 @@ void draw()
     println("color:" + update.col[cnt][0] + " " + update.col[cnt][1] + " " + update.col[cnt][2] + " " + update.col[cnt][3]);
     fill(update.col[cnt][0], update.col[cnt][1], update.col[cnt][2]);
     circle(update.circles[cnt].x, update.circles[cnt].y, 50);
-    cnt++;
-    
-  } 
+     cnt++;
   
+  } 
+
+  if(frameCount > 100 && frameCount <= 300)
+  {
+    
+  }
   if(frameCount > 300 && frameCount <= 300)
   {
       hole.render();
